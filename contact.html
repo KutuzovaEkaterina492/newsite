@@ -6,7 +6,7 @@
 body {padding:0px; margin:0; background:#FF0000; font-size:14px; font-family:Arial, Sans-serif;}
 #basic {width:960px; min-height:500px; margin:0 auto; padding:20px 20px 20px 20px; background:#fff;}
 img {border:0;}
-a {color:#FF00FF;}
+a {color:#DC143C;}
 a:hover {text-decoration:none;}
 /*Шапка сайта*/
 #head-site {height:300px; margin-right:40px;}
@@ -40,8 +40,14 @@ div#tekst_sverhu_kartinki {position: relative;}
 .left ul li {background:url(images/m3.png) no-repeat bottom left;}
 .left ul li a {display:block; width:195px; color:#fff; text-decoration:none; padding:10px 5px 10px 40px; background: url(images/marker.png) no-repeat 10px 8px;}
 .left ul li a:hover {background:#f2e127 url(images/marker.png) no-repeat 10px 8px;}
- 
- 
+/*форма*/
+        * {padding: 0;  }
+        #search {  }
+        .container { width: 400px; background-color: #FFA500; margin: 0 0; }
+        form input:not([type="checkbox","radio"]) {width: 100%; margin: 0 auto;}
+        p {padding: 15px;}
+        label {display: inline-block; width: 100%; margin: 0 auto;}
+
 /*Подвал*/
 .myclr {clear:both; float:none; width:100%; height:1px;}
  #podval {border-top:10px solid #FF7F50; margin-top:20px;} 
@@ -88,6 +94,41 @@ div#tekst_sverhu_kartinki {position: relative;}
             <div class="right">
                 <h1>КОНТАКТЫ</h1>
                 
+<div class="container">
+
+    <form method="GET" id="search">
+        <p>
+            <label for="phone">Телефон</label>
+            <input type="text" name="pol1" id="phone" placeholder="phone"></p>
+        <p> <label for="data">Дата</label> <input type="date" name= "data" id="data" placeholder="date"> </p>
+        <p><label for="email">Почта</label>
+            <input type="email" name="pol3" id="email" placeholder="email"></p>
+        <p><label>Имя, комментарий</label><textarea rows="10" cols="40" name="com" id="com" placeholder="name,info"></textarea></p>
+        
+        <label>Статус</label>
+        <label><input type="checkbox" name="uch">Студент</label>
+        <label><input type="checkbox" name="sotr">Сотрудник</label>
+            <p>
+    <label for="class">Oценка</label> 
+<select name="class" id="class">
+    <option value="1"> 1</option>
+    <option value="2"> 2</option>
+    <option value="3"> 3</option>
+    <option value="4"> 4</option>
+    <option value="5"> 5</option>
+</select>
+</p>
+<button type="Submit">Отправить</button>
+
+    </form>
+    <p>
+        Наши контакты: <br/>
+        <a href="https://vk.com/katrinkutuzova"> VK</a> <br/>
+        <a href="https://www.instagram.com/kutuzova.katr"> Instagram</a> <br/>
+         <a href="mailto:kutuzovaekaterina3@gmail.com"> Email</a> <br/>
+
+    </p>
+</div>
              
             </div>
              
