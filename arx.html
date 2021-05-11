@@ -6,7 +6,7 @@
 body {padding:0px; margin:0; background:#FF0000; font-size:14px; font-family:Arial, Sans-serif;}
 #basic {width:960px; min-height:500px; margin:0 auto; padding:20px 20px 20px 20px; background:#fff;}
 img {border:0;}
-a {color:#FF00FF;}
+a {color:#8B0000;}
 a:hover {text-decoration:none;}
 /*Шапка сайта*/
 #head-site {height:300px; margin-right:40px;}
@@ -40,7 +40,20 @@ div#tekst_sverhu_kartinki {position: relative;}
 .left ul li {background:url(images/m3.png) no-repeat bottom left;}
 .left ul li a {display:block; width:195px; color:#fff; text-decoration:none; padding:10px 5px 10px 40px; background: url(images/marker.png) no-repeat 10px 8px;}
 .left ul li a:hover {background:#f2e127 url(images/marker.png) no-repeat 10px 8px;}
- 
+ /*accordeon*/
+ .acor-container {margin: 20px 0;}
+.acor-container .acor-body {width: calc(100% - 40px);  margin: 0 auto; height: 0; color: rgba(0, 0, 0, 0); background-color: #ffff70; line-height: 18px;
+    padding: 0 30px; box-sizing: border-box; transition: color 0.5s, padding 0.5s; overflow: hidden; font-family: Verdana, sans-serif;  font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);}
+.acor-container .acor-body p { margin: 0 0 10px;}
+.acor-container label { cursor: pointer; background-color: #ffff70; display: block; padding: 15px 20px; width: 100%; color: #f54242; font-weight: 300;
+    box-sizing: border-box; z-index: 100; font-family: Verdana, sans-serif;    font-size: 18px; margin: 0 0 5px; transition: color .35s;}
+.acor-container label:hover { color: #FFF;}
+.acor-container input{ display: none;}
+.acor-container label:before { content: '\276F'; float: right;}
+.acor-container input:checked + label {background-color: #ffff70; color: #f54242; box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);}
+.acor-container input:checked  + label:before { transition: transform .35s; transform: rotate(90deg);}
+.acor-container input:checked + label + .acor-body { height: auto; margin-top: -5px; color: #f54242; padding: 20px 30px 10px;}
  
 /*Подвал*/
 .myclr {clear:both; float:none; width:100%; height:1px;}
@@ -87,7 +100,24 @@ div#tekst_sverhu_kartinki {position: relative;}
             <!-- Контент - правый блок -->
             <div class="right">
                 <h1>Архив Новостей</h1>
-                
+                <div class="acor-container"> 
+    
+    <input type="radio" name="acor" id="acor1" />
+    <label for="acor1">2020</label>
+    <div class="acor-body">
+     <p> <a href="../newsite/arx/a1.html">новость1</a> </p>
+     <p> <a href="../newsite/arx/a2.html">новость2</a> </p>
+     <p> <a href="../newsite/arx/a3.html">новость3</a> </p>
+    </div>
+    
+    <input type="radio" name="acor" id="acor2" />
+    <label for="acor2">2019</label>
+    <div class="acor-body">
+      <p> <a href="../newsite/arx/a4.html">новость4</a> </p>
+      <p> <a href="../newsite/arx/a5.html">новость5</a> </p>
+    </div>
+    
+</div>
              
             </div>
              
@@ -97,7 +127,7 @@ div#tekst_sverhu_kartinki {position: relative;}
                     <div class="block-nad-menu"></div>
                     <div class="block-menu">
                     <ul>
-                    <li><a href="C:\Users\648\OneDrive\Рабочий стол\сайт\newsite\home.html">Сведения о городе</a></li>
+                    <li><a href="C:\Users\648\OneDrive\Рабочий стол\сайт\newsite\index.html">Сведения о городе</a></li>
                     <li><a href="C:\Users\648\OneDrive\Рабочий стол\сайт\newsite\taganay.html">Наша гордость- Таганай</a></li>
                     <li><a href="C:\Users\648\OneDrive\Рабочий стол\сайт\newsite\bazh.html">Парк им. П.П. Бажова</a></li>
                     </ul>
